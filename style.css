@@ -140,6 +140,38 @@ transform: translateY(-10px);
   }
 }
 
+/* roteer wanneer click */
+a:nth-of-type(3){
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.roteer {
+animation-name: roteer;
+transform-origin: 50% 2em;
+animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+animation-duration: 2.5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes roteer {
+0%, 10%{
+  transform: none;
+  animation-timing-function: cubic-bezier(.87, -1.05, .66, 1.31);
+}
+
+40%{
+  transform: rotateZ(-45deg) scale(2);
+  animation-timing-function: cubic-bezier(.16, .54, 0, 1.38);
+}
+
+70%, 100% {
+  transform: rotateZ(360deg) scale(1);
+}
+}
+
 
 
  

@@ -38,7 +38,7 @@ bibberLink.addEventListener('click', bibber)
 function bibber(){
 bibberLink.classList.toggle('bibber')
 }
-
+// vallen 
 let valLink = document.querySelector('a:nth-of-type(2)')
 
 valLink.addEventListener('click', val)
@@ -46,3 +46,14 @@ valLink.addEventListener('click', val)
 function val(){
   valLink.classList.toggle('val')
 }
+
+// roteer
+let roteerLink = document.querySelector('a:nth-of-type(3)')
+
+roteerLink.addEventListener('click', roteer)
+
+function roteer(){
+  roteerLink.classList.toggle('roteer')
+}
+
+interaction.addEventListener('animationend', roteer)
